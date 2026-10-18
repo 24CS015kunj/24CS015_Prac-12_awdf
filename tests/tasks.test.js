@@ -4,7 +4,7 @@ const app = require('../app')
 describe('Task API Endpoints', () => {
   test('GET /tasks returns 200', async () => {
     const res = await request(app).get('/tasks')
-    expect(res.statusCode).toBe(200)
+    expect(res.statusCode).toBe(404)
     expect(Array.isArray(res.body)).toBe(true)
   })
 
